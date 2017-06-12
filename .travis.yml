@@ -18,6 +18,7 @@ script:
   - cmake ..
   - cd ../python
   - sudo python setup.py install
+  - cd ..
   - nosetests -sv
 notifications:
   recipients:
