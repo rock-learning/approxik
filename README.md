@@ -27,7 +27,7 @@ The package `control/approxik` is defined in
 Install the [dependencies](dependencies.md) and install the C++ header:
 
     mkdir build
-    cd  build
+    cd build
     cmake ..
     make install
 

@@ -1,0 +1,28 @@
+language: cpp
+compiler: gcc
+dist: trusty
+branches:
+  only:
+    - master
+    - /\d+\.\d+\..+/
+before_script:
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq python-dev python-numpy libeigen3-dev libboost-date-time-dev libtinyxml-dev libboost-system-dev libboost-thread-dev libboost-test-dev cmake python-pip
+  - sudo pip install cython nose
+  - export PYTHONPATH=$PYTHONPATH:/usr/lib/python2.7/dist-packages
+  - ./get_dependencies.sh
+script:
+  - export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+  - mkdir build
+  - cd build
+  - cmake ..
+  - cd ../python
+  - sudo python setup.py install
+  - nosetests -sv
+notifications:
+  recipients:
+    - alexander.fabisch@dfki.de
+  email:
+    on_success: change
+    on_failure: always
+
