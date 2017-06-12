@@ -17,11 +17,6 @@ calculated numerically which is usually fast enough.
 
 ## Installation
 
-### With rock
-
-The package `control/approxik` is defined in
-[this package set](https://git.hb.dfki.de/afabisch/package_set).
-
 ### Standalone
 
 Install the [dependencies](dependencies.md) and install the C++ header:
