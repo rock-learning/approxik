@@ -1,0 +1,32 @@
+# We assume that all dependencies are installed.
+# See 'dependencies.md' for details.
+
+stages:
+  - build
+
+ubuntu-python2-build:
+  stage: build
+  script:
+    - ./get_dependencies.sh
+    - mkdir -p build
+    - cd build; cmake ..
+    - cd ../python
+    - python setup.py build_ext -i
+    - cd ..
+    - source env.sh; PYTHONPATH=$PYTHONPATH:python nosetests
+  tags:
+    - ubuntu14.04,python2.7
+
+ubuntu-python3-build:
+  stage: build
+  script:
+    - ./get_dependencies.sh
+    - mkdir -p build
+    - cd build; cmake ..
+    - cd ../python
+    - python3 setup.py build_ext -i
+    - cd ..
+    - source env.sh; PYTHONPATH=$PYTHONPATH:python nosetests3
+  tags:
+    - ubuntu14.04,python3.4
+

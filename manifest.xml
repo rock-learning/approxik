@@ -1,0 +1,20 @@
+<package>
+    <description brief="Approximate IK">
+    Approximate inverse kinematics.
+    </description>
+    <author>Alexander Fabisch/afabisch@informatik.uni-bremen.de</author>
+    <license>BSD</license>
+    <url>https://git.hb.dfki.de/afabisch/approxik</url>
+
+    <depend package="base/console_bridge"/>
+    <depend package="control/kdl"/>
+    <depend package="control/kdl_parser"/>
+    <depend package="control/urdfdom"/>
+    <depend package="control/urdfdom_headers"/>
+    <depend package="tools/CppNumericalSolvers"/>
+
+    <rosdep name="python" />
+    <rosdep name="python-dev" />
+    <rosdep name="python-numpy" />
+    <rosdep name="cython" />
+</package>

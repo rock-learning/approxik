@@ -1,0 +1,19 @@
+# Build results
+deps
+build
+*.pc
+python/config.py
+python/*.cpp
+*.so
+
+# Temporary files
+*.pyc
+*~
+*.backup
+
+# MARS files
+evaluation/SMURFNode.yml
+evaluation/debugMap.yml
+evaluation/entityconfig.yml
+evaluation/mars_saveOnClose.yaml
+evaluation/smurfs_debugmap.yml

@@ -1,0 +1,1 @@
+Intended workshop: [IJCAI 2016 workshop on Interactive Machine Learning: Connecting Humans and Machines](https://sites.google.com/site/ijcai2016iml/call-for-papers)

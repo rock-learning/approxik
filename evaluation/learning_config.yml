@@ -1,0 +1,9 @@
+Environment: spacebot_throw_environment
+Environment Parameters:
+  calc_ms: 1
+  graphicsUpdateTime: 10
+  stepTimeMs: 1
+  ballThrowTime: 250
+  enableGUI: True
+  verbose: 2
+  armHeight: 0.8

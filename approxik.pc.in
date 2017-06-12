@@ -1,0 +1,2 @@
+Name: ${PROJECT_NAME}
+Cflags: ${PKG_CONFIG_CFLAGS}

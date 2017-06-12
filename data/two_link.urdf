@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<robot name="two_link">
+  <link name="base"/>
+
+  <joint name="joint_0" type="fixed">
+    <parent link="base"/>
+    <child link="link_0"/>
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <link name="link_0">
+  </link>
+
+  <joint name="joint_1" type="revolute">
+    <parent link="link_0"/>
+    <child link="link_1"/>
+    <origin xyz="0 0 0.25" rpy="0 0 0"/>
+    <limit effort="100" lower="-3.14" upper="3.14" velocity="1.57"/>
+  </joint>
+
+  <link name="link_1">
+  </link>
+
+  <joint name="tcp_joint" type="fixed">
+      <origin xyz="0 0 0.5" rpy="0.0 0.0 0.0"/>
+      <parent link="link_1"/>
+      <child link="tcp"/>
+  </joint>
+
+  <link name="tcp"/>
+</robot>

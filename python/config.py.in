@@ -1,0 +1,4 @@
+include_dirs = "${Boost_INCLUDE_DIR};${urdfdom_INCLUDE_DIRS};${urdfdom_headers_INCLUDE_DIRS};${console_bridge_INCLUDE_DIRS};${orocos_kdl_INCLUDE_DIRS};${kdl_parser_INCLUDE_DIRS};${EIGEN3_INCLUDE_DIRS};../${cppoptlib_INCLUDE_DIRS}"
+library_dirs = "${Boost_LIBRARY_DIRS};${urdfdom_LIBRARY_DIRS};${console_bridge_LIBRARY_DIRS};${orocos_kdl_LIBRARY_DIRS};${kdl_parser_LIBRARY_DIRS};${cppoptlib_LIBRARY_DIRS};${deps_LIBRARY_DIRS}"
+libraries = "${orocos_kdl_LIBRARIES};${urdfdom_LIBRARIES};${kdl_parser_LIBRARIES};${cppoptlib_LIBRARIES};${openmp_LIBRARIES}"
+extra_compile_args = "${CMAKE_CXX_FLAGS}"
