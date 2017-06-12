@@ -1,5 +1,7 @@
 # Approximate Inverse Kinematics
 
+[![Build Status](https://travis-ci.org/rock-learning/approxik.svg?branch=master)](https://travis-ci.org/rock-learning/approxik)
+
 Implementation of an approximate inverse kinematics for robots described by
 URDF files in C++ with Python bindings. The approximate IK allows you to set
 a weight for the position and the orientation to define how important it is
