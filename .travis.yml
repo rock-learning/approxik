@@ -19,6 +19,7 @@ script:
   - cd ../python
   - sudo python setup.py install
   - cd ..
+  - source env.sh
   - nosetests -sv
 notifications:
   recipients:
