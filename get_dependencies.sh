@@ -40,9 +40,9 @@ echo ===========================================================================
 echo $DIR
 echo ===========================================================================
 if [ ! -d "$DIR" ]; then
-  git clone https://github.com/ros/urdfdom_headers.git
+  git clone https://github.com/rock-learning/urdfdom_headers.git
   cd $DIR
-  git checkout 7fc4621e73ce0e6adb84f45157eae2f42e23ef93
+  git checkout fork
   mkdir build
   cd build
   cmake -DCMAKE_INSTALL_PREFIX=../../install ..
@@ -56,9 +56,9 @@ echo ===========================================================================
 echo $DIR
 echo ===========================================================================
 if [ ! -d "$DIR" ]; then
-  git clone https://github.com/ros/urdfdom.git
+  git clone https://github.com/rock-learning/urdfdom.git
   cd $DIR
-  git checkout f2f61e5e79862f307f5426cddb92b24695a3515c
+  git checkout fork
   mkdir build
   cd build
   cmake -DCMAKE_INSTALL_PREFIX=../../install -DCMAKE_MODULE_PATH=../../install/share ..
