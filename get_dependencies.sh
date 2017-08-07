@@ -88,8 +88,10 @@ echo ===========================================================================
 echo $DIR
 echo ===========================================================================
 if [ ! -d "$DIR" ]; then
-  git clone https://github.com/AlexanderFabisch/robot_model.git
-  cd $DIR/kdl_parser
+  git clone https://github.com/rock-learning/robot_model.git
+  cd $DIR/robot_model
+  git checkout fork
+  cd kdl_parser
   mkdir build
   cd build
   cmake -DCMAKE_INSTALL_PREFIX=../../../install ..
