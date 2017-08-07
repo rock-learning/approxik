@@ -21,7 +21,7 @@ set(CXXDEFINITIONS "-DNDEBUG")
 if(ROCK) # Build inside robot construction kit (rock)?
     include(FindPkgConfig)
 
-    pkg_check_modules(urdfdom_headers REQUIRED urdfdom_headers)
+    pkg_check_modules(urdfdom_headers_approxik REQUIRED urdfdom_headers)
     pkg_check_modules(urdfdom REQUIRED urdfdom)
     pkg_check_modules(console_bridge REQUIRED console_bridge)
     pkg_check_modules(orocos_kdl REQUIRED orocos_kdl)
@@ -29,7 +29,7 @@ if(ROCK) # Build inside robot construction kit (rock)?
 
     set(CXXDEFINITIONS "${CXXDEFINITIONS} -DROCK")
 else()   # You must install dependencies manually!
-    find_package(urdfdom_headers REQUIRED)
+    find_package(urdfdom_headers_approxik REQUIRED)
     find_package(urdfdom REQUIRED)
     find_package(console_bridge REQUIRED)
     find_package(orocos_kdl REQUIRED)
