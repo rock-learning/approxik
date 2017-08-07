@@ -89,7 +89,7 @@ echo $DIR
 echo ===========================================================================
 if [ ! -d "$DIR" ]; then
   git clone https://github.com/rock-learning/robot_model.git
-  cd $DIR/robot_model
+  cd $DIR
   git checkout fork
   cd kdl_parser
   mkdir build
