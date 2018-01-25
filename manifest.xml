@@ -3,8 +3,24 @@
     Approximate inverse kinematics.
     </description>
     <author>Alexander Fabisch/afabisch@informatik.uni-bremen.de</author>
-    <license>BSD</license>
+    <maintainer>Alexander Fabisch/afabisch@informatik.uni-bremen.de</maintainer>
+    <license>New BSD</license>
     <url>https://git.hb.dfki.de/afabisch/approxik</url>
+    <logo>none</logo>
+
+    <keywords>
+      <keyword>Control</keyword>
+    </keywords>
+    <use>multi project</use>
+    <stage>0</stage>
+    <activity>active</activity>
+
+    <classifiers>
+      <classifier>python</classifier>
+      <classifier>c++</classifier>
+      <classifier>rock</classifier>
+      <classifier>ubuntu</classifier>
+    </classifiers>
 
     <depend package="base/console_bridge"/>
     <depend package="control/kdl"/>
